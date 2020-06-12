@@ -12,6 +12,7 @@ Color::Color(char* hexstring)
   long long number = strtoll( &hexstring[1], NULL, 16);
   SetColor(number);
 }
+
 void Color::SetColor(long long color)
 {
   m_color = color;

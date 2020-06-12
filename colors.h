@@ -4,16 +4,19 @@
 
 #include <stdlib.h>
 #include <iostream>
+#include <string.h>
 
 class Color
 {
-private:
+  private:
     long long m_color;
 
-public:
+  public:
+    
     Color(long long color);
     Color(char* hex);
-    
+
+
     void SetColor(long long color);
     long long FromString(char* hex);
     int Green();
